@@ -5,6 +5,7 @@ public class MainStudent {
         student.setName("Adam abacki");
         student.setAddress("Warszawa U.Piekna 3/5");
         student.setId(123);
+        student.setKraj("Polska");
         System.out.println(student);
     }
 }
