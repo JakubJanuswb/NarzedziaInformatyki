@@ -40,5 +40,11 @@ public class Main {
                 System.out.println(iqCountry.place + ", " + iqCountry.country + ", " + iqCountry.iq);
             }
         }
+        System.out.println("\n" + "Filtrowanie danych dla przedzialu iq od 30 do 40 : " + "\n");
+        for (IqCountry iqCountry : importData.rankingIQ) {
+            if (iqCountry.iq <= 30 && iqCountry.iq >= 40) {
+                System.out.println(iqCountry.place + ", " + iqCountry.country + ", " + iqCountry.iq);
+            }
+        }
     }
 }
