@@ -4,12 +4,14 @@ public class Student {
     private String kraj;
     private String address;
     private int id;
+    private int kod;
 
-    public Student(String name, String address, String kraj, int id) {
+    public Student(String name, String address, String kraj, int id, int kod) {
         this.name = name;
         this.address = address;
         this.id = id;
         this.kraj = kraj;
+        this.kod = kod;
     }
 
     public Student() {}
@@ -30,6 +32,14 @@ public class Student {
         this.kraj = kraj;
     }
 
+    public void setKod(int kod) {
+        this.kod = kod;
+    }
+
+    public void setKod(int Kod) {
+        this.kod = kod;
+    }
+
     public String getName() {
         return name;
     }
@@ -46,13 +56,18 @@ public class Student {
         return kraj;
     }
 
+    public int getKod() {
+        return kod;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", id=" + id + '\'' +
-                ", kraj=" + kraj +
+                ", kraj=" + kraj + '\'' +
+                ", kod=" + kod
                 '}';
     }
 }
