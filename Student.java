@@ -1,14 +1,15 @@
 public class Student {
 
     private String name;
-
+    private String kraj;
     private String address;
     private int id;
 
-    public Student(String name, String address, int id) {
+    public Student(String name, String address, String kraj, int id) {
         this.name = name;
         this.address = address;
         this.id = id;
+        this.kraj = kraj;
     }
 
     public Student() {}
@@ -25,6 +26,10 @@ public class Student {
         this.id = id;
     }
 
+    public void setKraj(String kraj) {
+        this.kraj = kraj;
+    }
+
     public String getName() {
         return name;
     }
@@ -37,12 +42,17 @@ public class Student {
         return id;
     }
 
+    public String getKraj() {
+        return kraj;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", id=" + id +
+                ", id=" + id + '\'' +
+                ", kraj=" + kraj +
                 '}';
     }
 }
