@@ -3,6 +3,4 @@ class IqCountry {
     public int iq;
     public int place;
 
-    public int imie;
-
 }
