@@ -6,6 +6,7 @@ public class MainStudent {
         student.setAddress("Warszawa U.Piekna 3/5");
         student.setId(123);
         student.setKraj("Polska");
+        student.setKod("00-012");
         System.out.println(student);
     }
 }
