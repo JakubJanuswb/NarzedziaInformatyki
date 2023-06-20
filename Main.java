@@ -46,5 +46,12 @@ public class Main {
                 System.out.println(iqCountry.place + ", " + iqCountry.country + ", " + iqCountry.iq);
             }
         }
+        System.out.println("\n" + "Filtrowanie danych dla przedzialu iq od 90 do 100 : " + "\n");
+        for (IqCountry iqCountry : importData.rankingIQ) {
+            if (iqCountry.iq <= 90 && iqCountry.iq >= 100) {
+                System.out.println(iqCountry.place + ", " + iqCountry.country + ", " + iqCountry.iq);
+            }
+        }
+        System.out.println("\n" + "KONIEC PROGRAMU" + "\n");
     }
 }
